@@ -1450,6 +1450,20 @@ export default function Dashboard() {
               Overview
             </button>
             <button
+              onClick={() => setActiveSection("billing")}
+              className={`flex items-center w-full px-4 py-3 text-sm font-medium rounded-r-md ${activeSection === "billing" ? "text-emerald-600 bg-emerald-50 border-l-4 border-emerald-600" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"}`}
+            >
+              <CreditCard className="mr-3 h-5 w-5" />
+              Finance
+            </button>
+            <button
+              onClick={() => setActiveSection("food-delivery")}
+              className={`flex items-center w-full px-4 py-3 text-sm font-medium rounded-r-md ${activeSection === "food-delivery" ? "text-emerald-600 bg-emerald-50 border-l-4 border-emerald-600" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"}`}
+            >
+              <Utensils className="mr-3 h-5 w-5" />
+              Room Service
+            </button>
+            <button
               onClick={() => setActiveSection("check-in-out")}
               className={`flex items-center w-full px-4 py-3 text-sm font-medium rounded-r-md ${activeSection === "check-in-out" ? "text-emerald-600 bg-emerald-50 border-l-4 border-emerald-600" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"}`}
             >
@@ -1477,20 +1491,7 @@ export default function Dashboard() {
               <Star className="mr-3 h-5 w-5" />
               Guest Feedback
             </button>
-            <button
-              onClick={() => setActiveSection("billing")}
-              className={`flex items-center w-full px-4 py-3 text-sm font-medium rounded-r-md ${activeSection === "billing" ? "text-emerald-600 bg-emerald-50 border-l-4 border-emerald-600" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"}`}
-            >
-              <CreditCard className="mr-3 h-5 w-5" />
-              Finance
-            </button>
-            <button
-              onClick={() => setActiveSection("food-delivery")}
-              className={`flex items-center w-full px-4 py-3 text-sm font-medium rounded-r-md ${activeSection === "food-delivery" ? "text-emerald-600 bg-emerald-50 border-l-4 border-emerald-600" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"}`}
-            >
-              <Utensils className="mr-3 h-5 w-5" />
-              Room Service
-            </button>
+
             <button
               onClick={() => setActiveSection("premium")}
               className={`flex items-center w-full px-4 py-3 text-sm font-medium rounded-r-md ${activeSection === "premium" ? "text-emerald-600 bg-emerald-50 border-l-4 border-emerald-600" : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"}`}
